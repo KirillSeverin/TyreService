@@ -1,0 +1,59 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-reviews
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: reviews
+            columns:
+              - column: {name: id, type: bigint, autoIncrement: true, constraints: {primaryKey: true}}
+              - column: {name: partnerId, type: bigint, constraints: {nullable: false}}
+              - column: {name: ball, type: smallint, constraints: {nullable: false}}
+              - column: {name: message, type: varchar, constraints: {nullable: false}}
+
+  - changeSet:
+      id: 02-add-comments-reviews
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table reviews is 'Таблица хранения отзывов';
+
+  - changeSet:
+      id: 03-add-column-name-to-reviews
+      author: ${author}
+      changes:
+        - addColumn:
+            tableName: reviews
+            columns:
+              - column:
+                  name: name
+                  type: varchar(50)
+  - changeSet:
+      id: 04-add-column-date-to-reviews
+      author: ${author}
+      changes:
+        - addColumn:
+            tableName: reviews
+            columns:
+              - column:
+                  name: date
+                  type: datetime
+  - changeSet:
+      id: 05-drop-column-id-reviews
+      author: ${author}
+      changes:
+      -  dropColumn:
+           columnName:  id
+           tableName:  reviews
+
+  - changeSet:
+      id: 06-rename-column-reviews
+      author: ${author}
+      changes:
+        - renameColumn:
+            columnDataType: bigint
+            newColumnName: partner_id
+            oldColumnName: partnerId
+            tableName: reviews

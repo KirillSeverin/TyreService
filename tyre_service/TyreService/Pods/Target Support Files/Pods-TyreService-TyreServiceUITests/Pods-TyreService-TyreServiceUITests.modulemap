@@ -1,0 +1,6 @@
+framework module Pods_TyreService_TyreServiceUITests {
+  umbrella header "Pods-TyreService-TyreServiceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

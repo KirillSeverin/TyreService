@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-works
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: works
+            columns:
+              - column: {name: id, type: bigint, autoIncrement: true, constraints: {primaryKey: true}}
+              - column: {name: name, type: varchar(50), constraints: {nullable: false}}
+              - column: {name: description, type: varchar}
+              - column: {name: type, type: varchar(10)}
+
+  - changeSet:
+      id: 02-add-comments-works
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table works is 'Таблица хранения полного справочника услуг';

@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-lines_order
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: lines_order
+            columns:
+              - column: {name: order_id, type: bigint, constraints: {nullable: false}}
+              - column: {name: work_id, type: bigint, constraints: {nullable: false}}
+              - column: {name: price, type: int}
+              - column: {name: count, type: int, constraints: {nullable: false}}
+
+  - changeSet:
+      id: 02-add-foreign-key-linesOrder_order
+      author: ${author}
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: order_id
+            baseTableName: lines_order
+            constraintName: fk_linesOrder_order
+            referencedColumnNames: id
+            referencedTableName: orders
+            validate: true
+
+  - changeSet:
+      id: 03-add-foreign-key-linesOrder_work
+      author: ${author}
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: work_id
+            baseTableName: lines_order
+            constraintName: fk_linesOrder_work
+            referencedColumnNames: id
+            referencedTableName: works
+            validate: true
+
+  - changeSet:
+      id: 04-add-comments-lines_order
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table lines_order is 'Таблица хранения стоимости и количества оказанных услуг';

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReviewsCollectionViewCell" customModule="TyreService" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="328"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="328"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlf-TF-tzL">
+                        <rect key="frame" x="20" y="258" width="301" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Mdk-h5-URi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Добавить отзыв">
+                            <color key="titleColor" name="buttonBorderColor"/>
+                        </state>
+                        <connections>
+                            <action selector="showAddReviewScreen:" destination="gTV-IL-0wX" eventType="touchUpInside" id="eLh-I3-Qfy"/>
+                        </connections>
+                    </button>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eft-Xs-MaS">
+                        <rect key="frame" x="10" y="10" width="321" height="238"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="systemBackground"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mlf-TF-tzL" secondAttribute="bottom" constant="20" id="IWc-Hr-jFm"/>
+                <constraint firstAttribute="trailing" secondItem="eft-Xs-MaS" secondAttribute="trailing" constant="10" id="LAh-wa-iFG"/>
+                <constraint firstAttribute="trailing" secondItem="mlf-TF-tzL" secondAttribute="trailing" constant="20" id="LL0-JO-43f"/>
+                <constraint firstItem="mlf-TF-tzL" firstAttribute="top" secondItem="eft-Xs-MaS" secondAttribute="bottom" constant="10" id="MZX-6g-mYs"/>
+                <constraint firstItem="eft-Xs-MaS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="T3t-H2-8hb"/>
+                <constraint firstItem="mlf-TF-tzL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="fbO-LT-bVt"/>
+                <constraint firstItem="eft-Xs-MaS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hyw-2n-rjQ"/>
+            </constraints>
+            <size key="customSize" width="341" height="328"/>
+            <connections>
+                <outlet property="buttonAddReview" destination="mlf-TF-tzL" id="v34-77-xM4"/>
+                <outlet property="tableReview" destination="eft-Xs-MaS" id="7z1-Ep-HfS"/>
+            </connections>
+            <point key="canvasLocation" x="-101" y="108"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="buttonBorderColor">
+            <color red="0.32899999618530273" green="0.5690000057220459" blue="0.77999997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="systemBackground">
+            <color red="0.90588235294117647" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

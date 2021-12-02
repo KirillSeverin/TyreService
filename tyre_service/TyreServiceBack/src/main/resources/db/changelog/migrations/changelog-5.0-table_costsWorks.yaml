@@ -1,0 +1,53 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-costs_works
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: costs_works
+            columns:
+              - column: {name: partner_id, type: bigint, constraints: {nullable: false}}
+              - column: {name: work_id, type: bigint, constraints: {nullable: false}}
+              - column: {name: price, type: bigint, constraints: {nullable: false}}
+  - changeSet:
+      id: 02-add-primary-key-costsWorks
+      author: ${author}
+      changes:
+        - addPrimaryKey:
+            columnNames:  partner_id, work_id
+            constraintName:  pk_costsWorks
+            tableName:  costs_works
+            validate:  true
+
+  - changeSet:
+      id: 03-add-foreign-key-costsWorks_partner
+      author: ${author}
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: partner_id
+            baseTableName: costs_works
+            constraintName: fk_costsWorks_partner
+            referencedColumnNames: id
+            referencedTableName: partners
+            validate: true
+
+  - changeSet:
+      id: 04-add-foreign-key-costsWorks_work
+      author: ${author}
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: work_id
+            baseTableName: costs_works
+            constraintName: fk_costsWorks_work
+            referencedColumnNames: id
+            referencedTableName: works
+            validate: true
+
+  - changeSet:
+      id: 05-add-comments-costs_works
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table costs_works is 'Таблица хранения стоимости работ каждого из партнеров';

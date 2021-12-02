@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-orders
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column: {name: id, type: bigint, autoIncrement: true, constraints: {primaryKey: true}}
+              - column: {name: partner_id, type: bigint, constraints: {nullable: false}}
+              - column: {name: create_date, type: datetime, constraints: {nullable: false}}
+              - column: {name: booking_date, type: datetime, constraints: {nullable: false}}
+              - column: {name: status, type: varchar(20), constraints: {nullable: false}}
+              - column: {name: client_id, type: bigint}
+              - column: {name: client_name, type: varchar(50)}
+              - column: {name: client_phone, type: varchar(15), constraints: {nullable: false}}
+              - column: {name: client_auto, type: varchar(50)}
+
+  - changeSet:
+      id: 02-add-foreign-key-orders_partner
+      author: ${author}
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: partner_id
+            baseTableName: orders
+            constraintName: fk_orders_partner
+            referencedColumnNames: id
+            referencedTableName: partners
+            validate: true
+
+
+  - changeSet:
+      id: 03-add-comments-orders
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table orders is 'Таблица хранения заказов';

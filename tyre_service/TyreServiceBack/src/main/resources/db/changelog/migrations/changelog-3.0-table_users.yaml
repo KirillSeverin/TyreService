@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-users
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column: {name: id, type: bigint, autoIncrement: true, constraints: {primaryKey: true}}
+              - column: {name: login, type: varchar(50), constraints: {nullable: false}}
+              - column: {name: password, type: varchar, constraints: {nullable: false}}
+              - column: {name: role, type: varchar(15), constraints: {nullable: false}}
+              - column: {name: account, type: bigint, constraints: {nullable: false}}
+
+  - changeSet:
+      id: 02-add-comments-users
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table users is 'Таблица хранения прав авторизованных пользователей';

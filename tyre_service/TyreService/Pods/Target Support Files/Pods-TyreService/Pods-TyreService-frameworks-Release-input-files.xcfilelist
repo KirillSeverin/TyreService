@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TyreService/Pods-TyreService-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/RSSelectionMenu/RSSelectionMenu.framework
+${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework

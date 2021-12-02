@@ -1,0 +1,1462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C2887730B61F9C64C6621BC /* Pods_TyreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC149C8C569A852DD2A2FB7C /* Pods_TyreService.framework */; };
+		8BF2216E93FACA5D7854E73D /* Pods_TyreService_TyreServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A8AB9E556D9CC384F461D3 /* Pods_TyreService_TyreServiceUITests.framework */; };
+		CBA15F69B84D8BAEF54BAB40 /* Pods_TyreServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C320EC2D13FBA58C30D270F /* Pods_TyreServiceTests.framework */; };
+		ED08A7E7271A13A3005C2A57 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08A7E6271A13A3005C2A57 /* Localization.swift */; };
+		ED08A803271A1752005C2A57 /* PartnerServiceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08A7EE271A1752005C2A57 /* PartnerServiceCellViewModel.swift */; };
+		ED08A805271A1752005C2A57 /* PartnerCabinetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08A7F0271A1752005C2A57 /* PartnerCabinetViewModel.swift */; };
+		ED08A808271A1752005C2A57 /* PartnerCabinet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED08A7F6271A1752005C2A57 /* PartnerCabinet.storyboard */; };
+		ED08A80B271A1752005C2A57 /* PartnerServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08A7FC271A1752005C2A57 /* PartnerServiceTableViewCell.swift */; };
+		ED08A80D271A1752005C2A57 /* PartnerCabinetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08A7FF271A1752005C2A57 /* PartnerCabinetViewController.swift */; };
+		ED08A811271CB14C005C2A57 /* PartnerServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED08A810271CB14C005C2A57 /* PartnerServicesTableViewController.swift */; };
+		ED11C189272064BA00C41DF1 /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11C188272064BA00C41DF1 /* Partner.swift */; };
+		ED11C18B27206B7F00C41DF1 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11C18A27206B7F00C41DF1 /* AuthManager.swift */; };
+		ED2EC260271F3C9C00B67EBD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2EC25F271F3C9C00B67EBD /* MenuTableViewController.swift */; };
+		ED32DC2827160D2600690C8C /* ServiceInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC2727160D2600690C8C /* ServiceInfoViewModel.swift */; };
+		ED32DC2A27160D7700690C8C /* ServiceInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED32DC2927160D7700690C8C /* ServiceInfo.storyboard */; };
+		ED32DC2C27160DFE00690C8C /* ServiceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC2B27160DFE00690C8C /* ServiceInfoViewController.swift */; };
+		ED32DC30271613C600690C8C /* MenuServiceInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC2E271613C600690C8C /* MenuServiceInfoCollectionViewCell.swift */; };
+		ED32DC31271613C600690C8C /* MenuServiceInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED32DC2F271613C600690C8C /* MenuServiceInfoCollectionViewCell.xib */; };
+		ED32DC342716148400690C8C /* MenuCellServiceInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC332716148400690C8C /* MenuCellServiceInfoViewModel.swift */; };
+		ED32DC3827161CCC00690C8C /* AboutServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC3627161CCC00690C8C /* AboutServiceCollectionViewCell.swift */; };
+		ED32DC3927161CCC00690C8C /* AboutServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED32DC3727161CCC00690C8C /* AboutServiceCollectionViewCell.xib */; };
+		ED32DC3C27161CDD00690C8C /* ContactsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC3A27161CDD00690C8C /* ContactsCollectionViewCell.swift */; };
+		ED32DC3D27161CDD00690C8C /* ContactsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED32DC3B27161CDD00690C8C /* ContactsCollectionViewCell.xib */; };
+		ED32DC47271746F100690C8C /* AboutCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC46271746F100690C8C /* AboutCellViewModel.swift */; };
+		ED32DC492717470800690C8C /* ContactsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC482717470800690C8C /* ContactsCellViewModel.swift */; };
+		ED32DC4B2717472100690C8C /* ReviewsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32DC4A2717472100690C8C /* ReviewsCellViewModel.swift */; };
+		ED3F1CA12706189900385D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F1CA02706189900385D28 /* AppDelegate.swift */; };
+		ED3F1CA32706189900385D28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F1CA22706189900385D28 /* SceneDelegate.swift */; };
+		ED3F1CA52706189900385D28 /* ServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F1CA42706189900385D28 /* ServicesListViewController.swift */; };
+		ED3F1CA82706189900385D28 /* ServiceList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3F1CA62706189900385D28 /* ServiceList.storyboard */; };
+		ED3F1CAA2706189B00385D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3F1CA92706189B00385D28 /* Assets.xcassets */; };
+		ED3F1CAD2706189B00385D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3F1CAB2706189B00385D28 /* LaunchScreen.storyboard */; };
+		ED3F1CB82706189B00385D28 /* TyreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F1CB72706189B00385D28 /* TyreServiceTests.swift */; };
+		ED3F1CC22706189B00385D28 /* TyreServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F1CC12706189B00385D28 /* TyreServiceUITests.swift */; };
+		ED3F1CC42706189B00385D28 /* TyreServiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3F1CC32706189B00385D28 /* TyreServiceUITestsLaunchTests.swift */; };
+		ED4451AB270D017800B24F2D /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4451AA270D017800B24F2D /* ExtensionUIViewController.swift */; };
+		ED4451B4270D01B200B24F2D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4451AE270D01B200B24F2D /* SignUpViewModel.swift */; };
+		ED4451B6270D01B200B24F2D /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4451B2270D01B200B24F2D /* Registration.storyboard */; };
+		ED4451B7270D01B200B24F2D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4451B3270D01B200B24F2D /* RegistrationViewController.swift */; };
+		ED489A7B2721A35F005CF284 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED489A7A2721A35F005CF284 /* Constants.swift */; };
+		ED4C88632721C6AD00EB6323 /* RequestWorks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4C88622721C6AD00EB6323 /* RequestWorks.storyboard */; };
+		ED4C88652721C6DA00EB6323 /* RequestWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C88642721C6DA00EB6323 /* RequestWorksViewController.swift */; };
+		ED4C88672721C6F000EB6323 /* RequestWorksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4C88662721C6F000EB6323 /* RequestWorksViewModel.swift */; };
+		ED76AD242721FFB900A2D9F6 /* RequestWorksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76AD222721FFB900A2D9F6 /* RequestWorksTableViewCell.swift */; };
+		ED76AD252721FFB900A2D9F6 /* RequestWorksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED76AD232721FFB900A2D9F6 /* RequestWorksTableViewCell.xib */; };
+		ED76AD272722005B00A2D9F6 /* RequestWorkCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76AD262722005B00A2D9F6 /* RequestWorkCellViewModel.swift */; };
+		ED830B872726BDA700889AF2 /* PersonalArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED830B862726BDA700889AF2 /* PersonalArea.swift */; };
+		ED952F66271DEBA50017B956 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED952F65271DEBA50017B956 /* SideMenu.storyboard */; };
+		ED984904271339DD00C924A1 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED984903271339DD00C924A1 /* Authorization.storyboard */; };
+		ED98490827133AC800C924A1 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED98490727133AC800C924A1 /* AuthorizationViewController.swift */; };
+		ED98490A27133B7D00C924A1 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED98490927133B7D00C924A1 /* AuthorizationViewModel.swift */; };
+		EDE5D61E2724946300436FD7 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D61C2724946300436FD7 /* ReviewTableViewCell.swift */; };
+		EDE5D61F2724946300436FD7 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE5D61D2724946300436FD7 /* ReviewTableViewCell.xib */; };
+		EDE5D6222724968700436FD7 /* ReviewTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D6212724968700436FD7 /* ReviewTableCellViewModel.swift */; };
+		EDE5D6272725943900436FD7 /* CreateReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE5D6262725943900436FD7 /* CreateReview.storyboard */; };
+		EDE5D6292725949700436FD7 /* CreateReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D6282725949700436FD7 /* CreateReviewViewController.swift */; };
+		EDE5D62B272594F400436FD7 /* CreateReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D62A272594F400436FD7 /* CreateReviewViewModel.swift */; };
+		EDE5D6312725AA3700436FD7 /* Orders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE5D6302725AA3700436FD7 /* Orders.storyboard */; };
+		EDE5D6352725AA6300436FD7 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D6342725AA6300436FD7 /* OrdersTableViewController.swift */; };
+		EDE5D6372725B20000436FD7 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D6362725B20000436FD7 /* OrdersViewModel.swift */; };
+		EDE5D63A2725B39C00436FD7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D6392725B39C00436FD7 /* Order.swift */; };
+		EDE5D63E2725C11800436FD7 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D63C2725C11800436FD7 /* OrderTableViewCell.swift */; };
+		EDE5D63F2725C11800436FD7 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE5D63D2725C11800436FD7 /* OrderTableViewCell.xib */; };
+		EDE5D6422725C2FD00436FD7 /* OrderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5D6412725C2FD00436FD7 /* OrderCellViewModel.swift */; };
+		EDE667F1270B5E69002DD027 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE667F0270B5E69002DD027 /* NetworkManager.swift */; };
+		EDE667F9270B5FFA002DD027 /* CarTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE667F7270B5FFA002DD027 /* CarTypeCollectionViewCell.swift */; };
+		EDE667FA270B5FFA002DD027 /* CarTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE667F8270B5FFA002DD027 /* CarTypeCollectionViewCell.xib */; };
+		EDE667FE270B6178002DD027 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE667FD270B6178002DD027 /* ServiceModel.swift */; };
+		EDE66801270B6530002DD027 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66800270B6530002DD027 /* ExtensionString.swift */; };
+		EDE66804270B6769002DD027 /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66803270B6769002DD027 /* RequestStatus.swift */; };
+		EDE66806270B68AC002DD027 /* ServiceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66805270B68AC002DD027 /* ServiceListViewModel.swift */; };
+		EDE66808270B69AB002DD027 /* ServiceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66807270B69AB002DD027 /* ServiceCellViewModel.swift */; };
+		EDE6680A270B69F8002DD027 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66809270B69F8002DD027 /* FilterCellViewModel.swift */; };
+		EDE66813270B73F4002DD027 /* ServiceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE66811270B73F4002DD027 /* ServiceViewCell.swift */; };
+		EDE66814270B73F4002DD027 /* ServiceViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDE66812270B73F4002DD027 /* ServiceViewCell.xib */; };
+		EDED3C5D27244FA700079B87 /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDED3C5C27244FA700079B87 /* ResponseStatus.swift */; };
+		EDED3C5F2724A0C400079B87 /* PartnerServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDED3C5E2724A0C400079B87 /* PartnerServicesViewModel.swift */; };
+		FE8D590127195685000AB01F /* ReviewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8D58FF27195685000AB01F /* ReviewsCollectionViewCell.swift */; };
+		FE8D590227195685000AB01F /* ReviewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE8D590027195685000AB01F /* ReviewsCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED3F1CB42706189B00385D28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3F1C952706189900385D28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3F1C9C2706189900385D28;
+			remoteInfo = TyreService;
+		};
+		ED3F1CBE2706189B00385D28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3F1C952706189900385D28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3F1C9C2706189900385D28;
+			remoteInfo = TyreService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09A8AB9E556D9CC384F461D3 /* Pods_TyreService_TyreServiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TyreService_TyreServiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACEC35B84AD1D7651A430D1 /* Pods-TyreServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyreServiceTests.release.xcconfig"; path = "Target Support Files/Pods-TyreServiceTests/Pods-TyreServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		7199361751E08E45413F3F86 /* Pods-TyreService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyreService.release.xcconfig"; path = "Target Support Files/Pods-TyreService/Pods-TyreService.release.xcconfig"; sourceTree = "<group>"; };
+		77CF3E373EFE0BEEB84C2313 /* Pods-TyreService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyreService.debug.xcconfig"; path = "Target Support Files/Pods-TyreService/Pods-TyreService.debug.xcconfig"; sourceTree = "<group>"; };
+		9088E6634B1C87D8EDA50C51 /* Pods-TyreService-TyreServiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyreService-TyreServiceUITests.release.xcconfig"; path = "Target Support Files/Pods-TyreService-TyreServiceUITests/Pods-TyreService-TyreServiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C320EC2D13FBA58C30D270F /* Pods_TyreServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TyreServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82D60A74E179582077F5380 /* Pods-TyreServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyreServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-TyreServiceTests/Pods-TyreServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC149C8C569A852DD2A2FB7C /* Pods_TyreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TyreService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04100B3999D80CEC3DAB730 /* Pods-TyreService-TyreServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyreService-TyreServiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-TyreService-TyreServiceUITests/Pods-TyreService-TyreServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED08A7E6271A13A3005C2A57 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		ED08A7EE271A1752005C2A57 /* PartnerServiceCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerServiceCellViewModel.swift; sourceTree = "<group>"; };
+		ED08A7F0271A1752005C2A57 /* PartnerCabinetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerCabinetViewModel.swift; sourceTree = "<group>"; };
+		ED08A7F6271A1752005C2A57 /* PartnerCabinet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PartnerCabinet.storyboard; sourceTree = "<group>"; };
+		ED08A7FC271A1752005C2A57 /* PartnerServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerServiceTableViewCell.swift; sourceTree = "<group>"; };
+		ED08A7FD271A1752005C2A57 /* PartnerServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartnerServiceTableViewCell.xib; sourceTree = "<group>"; };
+		ED08A7FF271A1752005C2A57 /* PartnerCabinetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerCabinetViewController.swift; sourceTree = "<group>"; };
+		ED08A810271CB14C005C2A57 /* PartnerServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerServicesTableViewController.swift; sourceTree = "<group>"; };
+		ED11C188272064BA00C41DF1 /* Partner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partner.swift; sourceTree = "<group>"; };
+		ED11C18A27206B7F00C41DF1 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		ED2EC25F271F3C9C00B67EBD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		ED32DC2727160D2600690C8C /* ServiceInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfoViewModel.swift; sourceTree = "<group>"; };
+		ED32DC2927160D7700690C8C /* ServiceInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceInfo.storyboard; sourceTree = "<group>"; };
+		ED32DC2B27160DFE00690C8C /* ServiceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfoViewController.swift; sourceTree = "<group>"; };
+		ED32DC2E271613C600690C8C /* MenuServiceInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServiceInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED32DC2F271613C600690C8C /* MenuServiceInfoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuServiceInfoCollectionViewCell.xib; sourceTree = "<group>"; };
+		ED32DC332716148400690C8C /* MenuCellServiceInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellServiceInfoViewModel.swift; sourceTree = "<group>"; };
+		ED32DC3627161CCC00690C8C /* AboutServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED32DC3727161CCC00690C8C /* AboutServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutServiceCollectionViewCell.xib; sourceTree = "<group>"; };
+		ED32DC3A27161CDD00690C8C /* ContactsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED32DC3B27161CDD00690C8C /* ContactsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsCollectionViewCell.xib; sourceTree = "<group>"; };
+		ED32DC46271746F100690C8C /* AboutCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCellViewModel.swift; sourceTree = "<group>"; };
+		ED32DC482717470800690C8C /* ContactsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCellViewModel.swift; sourceTree = "<group>"; };
+		ED32DC4A2717472100690C8C /* ReviewsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCellViewModel.swift; sourceTree = "<group>"; };
+		ED3F1C9D2706189900385D28 /* TyreService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TyreService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3F1CA02706189900385D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED3F1CA22706189900385D28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED3F1CA42706189900385D28 /* ServicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListViewController.swift; sourceTree = "<group>"; };
+		ED3F1CA72706189900385D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ServiceList.storyboard; sourceTree = "<group>"; };
+		ED3F1CA92706189B00385D28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED3F1CAC2706189B00385D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED3F1CAE2706189B00385D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED3F1CB32706189B00385D28 /* TyreServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyreServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3F1CB72706189B00385D28 /* TyreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyreServiceTests.swift; sourceTree = "<group>"; };
+		ED3F1CBD2706189B00385D28 /* TyreServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyreServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3F1CC12706189B00385D28 /* TyreServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyreServiceUITests.swift; sourceTree = "<group>"; };
+		ED3F1CC32706189B00385D28 /* TyreServiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TyreServiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED4451AA270D017800B24F2D /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
+		ED4451AE270D01B200B24F2D /* SignUpViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		ED4451B2270D01B200B24F2D /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		ED4451B3270D01B200B24F2D /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		ED489A7A2721A35F005CF284 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED4C88622721C6AD00EB6323 /* RequestWorks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestWorks.storyboard; sourceTree = "<group>"; };
+		ED4C88642721C6DA00EB6323 /* RequestWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorksViewController.swift; sourceTree = "<group>"; };
+		ED4C88662721C6F000EB6323 /* RequestWorksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorksViewModel.swift; sourceTree = "<group>"; };
+		ED76AD222721FFB900A2D9F6 /* RequestWorksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorksTableViewCell.swift; sourceTree = "<group>"; };
+		ED76AD232721FFB900A2D9F6 /* RequestWorksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestWorksTableViewCell.xib; sourceTree = "<group>"; };
+		ED76AD262722005B00A2D9F6 /* RequestWorkCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWorkCellViewModel.swift; sourceTree = "<group>"; };
+		ED830B862726BDA700889AF2 /* PersonalArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalArea.swift; sourceTree = "<group>"; };
+		ED952F65271DEBA50017B956 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		ED984903271339DD00C924A1 /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		ED98490727133AC800C924A1 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		ED98490927133B7D00C924A1 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		EDE5D61C2724946300436FD7 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		EDE5D61D2724946300436FD7 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		EDE5D6212724968700436FD7 /* ReviewTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableCellViewModel.swift; sourceTree = "<group>"; };
+		EDE5D6262725943900436FD7 /* CreateReview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateReview.storyboard; sourceTree = "<group>"; };
+		EDE5D6282725949700436FD7 /* CreateReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewViewController.swift; sourceTree = "<group>"; };
+		EDE5D62A272594F400436FD7 /* CreateReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewViewModel.swift; sourceTree = "<group>"; };
+		EDE5D6302725AA3700436FD7 /* Orders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orders.storyboard; sourceTree = "<group>"; };
+		EDE5D6342725AA6300436FD7 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		EDE5D6362725B20000436FD7 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		EDE5D6392725B39C00436FD7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		EDE5D63C2725C11800436FD7 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		EDE5D63D2725C11800436FD7 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		EDE5D6412725C2FD00436FD7 /* OrderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellViewModel.swift; sourceTree = "<group>"; };
+		EDE667F0270B5E69002DD027 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EDE667F7270B5FFA002DD027 /* CarTypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EDE667F8270B5FFA002DD027 /* CarTypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		EDE667FD270B6178002DD027 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		EDE66800270B6530002DD027 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		EDE66803270B6769002DD027 /* RequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
+		EDE66805270B68AC002DD027 /* ServiceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListViewModel.swift; sourceTree = "<group>"; };
+		EDE66807270B69AB002DD027 /* ServiceCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCellViewModel.swift; sourceTree = "<group>"; };
+		EDE66809270B69F8002DD027 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
+		EDE66811270B73F4002DD027 /* ServiceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewCell.swift; sourceTree = "<group>"; };
+		EDE66812270B73F4002DD027 /* ServiceViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceViewCell.xib; sourceTree = "<group>"; };
+		EDED3C5C27244FA700079B87 /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
+		EDED3C5E2724A0C400079B87 /* PartnerServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerServicesViewModel.swift; sourceTree = "<group>"; };
+		FE8D58FF27195685000AB01F /* ReviewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE8D590027195685000AB01F /* ReviewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED3F1C9A2706189900385D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C2887730B61F9C64C6621BC /* Pods_TyreService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F1CB02706189B00385D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA15F69B84D8BAEF54BAB40 /* Pods_TyreServiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F1CBA2706189B00385D28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF2216E93FACA5D7854E73D /* Pods_TyreService_TyreServiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		439488C7E097CE13494F3E80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77CF3E373EFE0BEEB84C2313 /* Pods-TyreService.debug.xcconfig */,
+				7199361751E08E45413F3F86 /* Pods-TyreService.release.xcconfig */,
+				E04100B3999D80CEC3DAB730 /* Pods-TyreService-TyreServiceUITests.debug.xcconfig */,
+				9088E6634B1C87D8EDA50C51 /* Pods-TyreService-TyreServiceUITests.release.xcconfig */,
+				B82D60A74E179582077F5380 /* Pods-TyreServiceTests.debug.xcconfig */,
+				0ACEC35B84AD1D7651A430D1 /* Pods-TyreServiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		68419E0D495D9F52DA12675D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC149C8C569A852DD2A2FB7C /* Pods_TyreService.framework */,
+				09A8AB9E556D9CC384F461D3 /* Pods_TyreService_TyreServiceUITests.framework */,
+				9C320EC2D13FBA58C30D270F /* Pods_TyreServiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED08A7E9271A1752005C2A57 /* PartnersCabinet */ = {
+			isa = PBXGroup;
+			children = (
+				ED830B852726BD9000889AF2 /* Model */,
+				ED08A7EA271A1752005C2A57 /* ViewModel */,
+				ED08A7F4271A1752005C2A57 /* View */,
+			);
+			path = PartnersCabinet;
+			sourceTree = "<group>";
+		};
+		ED08A7EA271A1752005C2A57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A7F0271A1752005C2A57 /* PartnerCabinetViewModel.swift */,
+				EDED3C5E2724A0C400079B87 /* PartnerServicesViewModel.swift */,
+				ED08A7EE271A1752005C2A57 /* PartnerServiceCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED08A7F4271A1752005C2A57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A7F5271A1752005C2A57 /* Storyboards */,
+				ED08A7FE271A1752005C2A57 /* Controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED08A7F5271A1752005C2A57 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A7F7271A1752005C2A57 /* Cells */,
+				ED08A7F6271A1752005C2A57 /* PartnerCabinet.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ED08A7F7271A1752005C2A57 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A7FB271A1752005C2A57 /* PartnerServiceTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED08A7FB271A1752005C2A57 /* PartnerServiceTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A7FD271A1752005C2A57 /* PartnerServiceTableViewCell.xib */,
+				ED08A7FC271A1752005C2A57 /* PartnerServiceTableViewCell.swift */,
+			);
+			path = PartnerServiceTableViewCell;
+			sourceTree = "<group>";
+		};
+		ED08A7FE271A1752005C2A57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED08A7FF271A1752005C2A57 /* PartnerCabinetViewController.swift */,
+				ED08A810271CB14C005C2A57 /* PartnerServicesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED11C187272064A000C41DF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED11C188272064BA00C41DF1 /* Partner.swift */,
+				EDED3C5C27244FA700079B87 /* ResponseStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED32DC2427160CE800690C8C /* ServiceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC2627160D0A00690C8C /* View */,
+				ED32DC2527160D0200690C8C /* ViewModel */,
+			);
+			path = ServiceInfo;
+			sourceTree = "<group>";
+		};
+		ED32DC2527160D0200690C8C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC45271746CF00690C8C /* InfoViewModel */,
+				ED32DC322716147200690C8C /* TopMenu */,
+				ED32DC2727160D2600690C8C /* ServiceInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED32DC2627160D0A00690C8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC3527161C9200690C8C /* InfoView */,
+				ED32DC2D2716135800690C8C /* TopMenu */,
+				ED32DC2927160D7700690C8C /* ServiceInfo.storyboard */,
+				ED32DC2B27160DFE00690C8C /* ServiceInfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED32DC2D2716135800690C8C /* TopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC2E271613C600690C8C /* MenuServiceInfoCollectionViewCell.swift */,
+				ED32DC2F271613C600690C8C /* MenuServiceInfoCollectionViewCell.xib */,
+			);
+			path = TopMenu;
+			sourceTree = "<group>";
+		};
+		ED32DC322716147200690C8C /* TopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC332716148400690C8C /* MenuCellServiceInfoViewModel.swift */,
+			);
+			path = TopMenu;
+			sourceTree = "<group>";
+		};
+		ED32DC3527161C9200690C8C /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC4327161D0800690C8C /* AboutView */,
+				ED32DC4227161D0100690C8C /* ContactView */,
+				ED32DC4427161D1000690C8C /* ReviewsView */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		ED32DC4227161D0100690C8C /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC3A27161CDD00690C8C /* ContactsCollectionViewCell.swift */,
+				ED32DC3B27161CDD00690C8C /* ContactsCollectionViewCell.xib */,
+			);
+			path = ContactView;
+			sourceTree = "<group>";
+		};
+		ED32DC4327161D0800690C8C /* AboutView */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC3627161CCC00690C8C /* AboutServiceCollectionViewCell.swift */,
+				ED32DC3727161CCC00690C8C /* AboutServiceCollectionViewCell.xib */,
+			);
+			path = AboutView;
+			sourceTree = "<group>";
+		};
+		ED32DC4427161D1000690C8C /* ReviewsView */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D61B2724944800436FD7 /* ReviewTableCell */,
+				FE8D58FF27195685000AB01F /* ReviewsCollectionViewCell.swift */,
+				FE8D590027195685000AB01F /* ReviewsCollectionViewCell.xib */,
+			);
+			path = ReviewsView;
+			sourceTree = "<group>";
+		};
+		ED32DC45271746CF00690C8C /* InfoViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED32DC46271746F100690C8C /* AboutCellViewModel.swift */,
+				ED32DC482717470800690C8C /* ContactsCellViewModel.swift */,
+				ED32DC4A2717472100690C8C /* ReviewsCellViewModel.swift */,
+				EDE5D6212724968700436FD7 /* ReviewTableCellViewModel.swift */,
+			);
+			path = InfoViewModel;
+			sourceTree = "<group>";
+		};
+		ED3F1C942706189900385D28 = {
+			isa = PBXGroup;
+			children = (
+				ED3F1C9F2706189900385D28 /* TyreService */,
+				ED3F1CB62706189B00385D28 /* TyreServiceTests */,
+				ED3F1CC02706189B00385D28 /* TyreServiceUITests */,
+				ED3F1C9E2706189900385D28 /* Products */,
+				439488C7E097CE13494F3E80 /* Pods */,
+				68419E0D495D9F52DA12675D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED3F1C9E2706189900385D28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F1C9D2706189900385D28 /* TyreService.app */,
+				ED3F1CB32706189B00385D28 /* TyreServiceTests.xctest */,
+				ED3F1CBD2706189B00385D28 /* TyreServiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED3F1C9F2706189900385D28 /* TyreService */ = {
+			isa = PBXGroup;
+			children = (
+				EDE667EF270B5E54002DD027 /* Managers */,
+				EDE66802270B675B002DD027 /* Enums */,
+				EDE667FF270B6516002DD027 /* Extensions */,
+				EDE667EE270B5E3E002DD027 /* Screens */,
+				ED3F1CA02706189900385D28 /* AppDelegate.swift */,
+				ED3F1CA22706189900385D28 /* SceneDelegate.swift */,
+				ED3F1CA92706189B00385D28 /* Assets.xcassets */,
+				ED3F1CAB2706189B00385D28 /* LaunchScreen.storyboard */,
+				ED3F1CAE2706189B00385D28 /* Info.plist */,
+			);
+			path = TyreService;
+			sourceTree = "<group>";
+		};
+		ED3F1CB62706189B00385D28 /* TyreServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F1CB72706189B00385D28 /* TyreServiceTests.swift */,
+			);
+			path = TyreServiceTests;
+			sourceTree = "<group>";
+		};
+		ED3F1CC02706189B00385D28 /* TyreServiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED3F1CC12706189B00385D28 /* TyreServiceUITests.swift */,
+				ED3F1CC32706189B00385D28 /* TyreServiceUITestsLaunchTests.swift */,
+			);
+			path = TyreServiceUITests;
+			sourceTree = "<group>";
+		};
+		ED4451AC270D01B200B24F2D /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				ED11C187272064A000C41DF1 /* Model */,
+				ED4451AD270D01B200B24F2D /* ViewModel */,
+				ED4451B1270D01B200B24F2D /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		ED4451AD270D01B200B24F2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED4451AE270D01B200B24F2D /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED4451B1270D01B200B24F2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED4451B3270D01B200B24F2D /* RegistrationViewController.swift */,
+				ED4451B2270D01B200B24F2D /* Registration.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED4C885F2721C50B00EB6323 /* RequestWorks */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C88612721C5C500EB6323 /* ViewModel */,
+				ED4C88602721C5BF00EB6323 /* View */,
+			);
+			path = RequestWorks;
+			sourceTree = "<group>";
+		};
+		ED4C88602721C5BF00EB6323 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED76AD212721FF5E00A2D9F6 /* ServiceCell */,
+				ED4C88622721C6AD00EB6323 /* RequestWorks.storyboard */,
+				ED4C88642721C6DA00EB6323 /* RequestWorksViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED4C88612721C5C500EB6323 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C88662721C6F000EB6323 /* RequestWorksViewModel.swift */,
+				ED76AD262722005B00A2D9F6 /* RequestWorkCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED765B45271DE82400BEBC1E /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				ED765B46271DE83400BEBC1E /* View */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		ED765B46271DE83400BEBC1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED952F65271DEBA50017B956 /* SideMenu.storyboard */,
+				ED2EC25F271F3C9C00B67EBD /* MenuTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED76AD212721FF5E00A2D9F6 /* ServiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED76AD222721FFB900A2D9F6 /* RequestWorksTableViewCell.swift */,
+				ED76AD232721FFB900A2D9F6 /* RequestWorksTableViewCell.xib */,
+			);
+			path = ServiceCell;
+			sourceTree = "<group>";
+		};
+		ED830B852726BD9000889AF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED830B862726BDA700889AF2 /* PersonalArea.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED9848FF2713391500C924A1 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				ED9849012713393400C924A1 /* ViewModel */,
+				ED9849002713392800C924A1 /* View */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		ED9849002713392800C924A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED98490727133AC800C924A1 /* AuthorizationViewController.swift */,
+				ED984903271339DD00C924A1 /* Authorization.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED9849012713393400C924A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED98490927133B7D00C924A1 /* AuthorizationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDE5D61B2724944800436FD7 /* ReviewTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D61C2724946300436FD7 /* ReviewTableViewCell.swift */,
+				EDE5D61D2724946300436FD7 /* ReviewTableViewCell.xib */,
+			);
+			path = ReviewTableCell;
+			sourceTree = "<group>";
+		};
+		EDE5D6232725940300436FD7 /* CreateReview */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D6252725941900436FD7 /* ViewModel */,
+				EDE5D6242725941400436FD7 /* View */,
+			);
+			path = CreateReview;
+			sourceTree = "<group>";
+		};
+		EDE5D6242725941400436FD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D6262725943900436FD7 /* CreateReview.storyboard */,
+				EDE5D6282725949700436FD7 /* CreateReviewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDE5D6252725941900436FD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D62A272594F400436FD7 /* CreateReviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDE5D62D2725AA1D00436FD7 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D6382725B39000436FD7 /* Model */,
+				EDE5D62F2725AA2C00436FD7 /* ViewModel */,
+				EDE5D62E2725AA2700436FD7 /* View */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		EDE5D62E2725AA2700436FD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D63B2725C0EF00436FD7 /* Cell */,
+				EDE5D6302725AA3700436FD7 /* Orders.storyboard */,
+				EDE5D6342725AA6300436FD7 /* OrdersTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDE5D62F2725AA2C00436FD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D6362725B20000436FD7 /* OrdersViewModel.swift */,
+				EDE5D6412725C2FD00436FD7 /* OrderCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDE5D6382725B39000436FD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D6392725B39C00436FD7 /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDE5D63B2725C0EF00436FD7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5D63C2725C11800436FD7 /* OrderTableViewCell.swift */,
+				EDE5D63D2725C11800436FD7 /* OrderTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EDE667EA270B5D51002DD027 /* ServiceList */ = {
+			isa = PBXGroup;
+			children = (
+				EDE667EB270B5E1E002DD027 /* Model */,
+				EDE667EC270B5E26002DD027 /* ViewModel */,
+				EDE667ED270B5E2D002DD027 /* View */,
+			);
+			path = ServiceList;
+			sourceTree = "<group>";
+		};
+		EDE667EB270B5E1E002DD027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDE667FD270B6178002DD027 /* ServiceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDE667EC270B5E26002DD027 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDE66805270B68AC002DD027 /* ServiceListViewModel.swift */,
+				EDE66807270B69AB002DD027 /* ServiceCellViewModel.swift */,
+				EDE66809270B69F8002DD027 /* FilterCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDE667ED270B5E2D002DD027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDE66810270B73D1002DD027 /* ServiceCell */,
+				EDE667F6270B5FCD002DD027 /* FilterCell */,
+				ED3F1CA42706189900385D28 /* ServicesListViewController.swift */,
+				ED3F1CA62706189900385D28 /* ServiceList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDE667EE270B5E3E002DD027 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ED765B45271DE82400BEBC1E /* SideMenu */,
+				ED08A7E9271A1752005C2A57 /* PartnersCabinet */,
+				ED4451AC270D01B200B24F2D /* Registration */,
+				ED9848FF2713391500C924A1 /* Authorization */,
+				EDE5D62D2725AA1D00436FD7 /* Orders */,
+				EDE667EA270B5D51002DD027 /* ServiceList */,
+				ED32DC2427160CE800690C8C /* ServiceInfo */,
+				ED4C885F2721C50B00EB6323 /* RequestWorks */,
+				EDE5D6232725940300436FD7 /* CreateReview */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		EDE667EF270B5E54002DD027 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EDE667F0270B5E69002DD027 /* NetworkManager.swift */,
+				ED11C18A27206B7F00C41DF1 /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EDE667F6270B5FCD002DD027 /* FilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				EDE667F7270B5FFA002DD027 /* CarTypeCollectionViewCell.swift */,
+				EDE667F8270B5FFA002DD027 /* CarTypeCollectionViewCell.xib */,
+			);
+			path = FilterCell;
+			sourceTree = "<group>";
+		};
+		EDE667FF270B6516002DD027 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDE66800270B6530002DD027 /* ExtensionString.swift */,
+				ED4451AA270D017800B24F2D /* ExtensionUIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDE66802270B675B002DD027 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EDE66803270B6769002DD027 /* RequestStatus.swift */,
+				ED08A7E6271A13A3005C2A57 /* Localization.swift */,
+				ED489A7A2721A35F005CF284 /* Constants.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EDE66810270B73D1002DD027 /* ServiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				EDE66811270B73F4002DD027 /* ServiceViewCell.swift */,
+				EDE66812270B73F4002DD027 /* ServiceViewCell.xib */,
+			);
+			path = ServiceCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED3F1C9C2706189900385D28 /* TyreService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3F1CC72706189B00385D28 /* Build configuration list for PBXNativeTarget "TyreService" */;
+			buildPhases = (
+				E68C68BDA76A0FA219CDDBD7 /* [CP] Check Pods Manifest.lock */,
+				ED3F1C992706189900385D28 /* Sources */,
+				ED3F1C9A2706189900385D28 /* Frameworks */,
+				ED3F1C9B2706189900385D28 /* Resources */,
+				8D511F2C3062666FEB588F0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TyreService;
+			productName = TyreService;
+			productReference = ED3F1C9D2706189900385D28 /* TyreService.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED3F1CB22706189B00385D28 /* TyreServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3F1CCA2706189B00385D28 /* Build configuration list for PBXNativeTarget "TyreServiceTests" */;
+			buildPhases = (
+				78A95FABC2936E5B9D7748B3 /* [CP] Check Pods Manifest.lock */,
+				ED3F1CAF2706189B00385D28 /* Sources */,
+				ED3F1CB02706189B00385D28 /* Frameworks */,
+				ED3F1CB12706189B00385D28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED3F1CB52706189B00385D28 /* PBXTargetDependency */,
+			);
+			name = TyreServiceTests;
+			productName = TyreServiceTests;
+			productReference = ED3F1CB32706189B00385D28 /* TyreServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED3F1CBC2706189B00385D28 /* TyreServiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3F1CCD2706189B00385D28 /* Build configuration list for PBXNativeTarget "TyreServiceUITests" */;
+			buildPhases = (
+				126D8717BCFFC4C2FB73E75A /* [CP] Check Pods Manifest.lock */,
+				ED3F1CB92706189B00385D28 /* Sources */,
+				ED3F1CBA2706189B00385D28 /* Frameworks */,
+				ED3F1CBB2706189B00385D28 /* Resources */,
+				BB64B38CF34420543D4BAD17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED3F1CBF2706189B00385D28 /* PBXTargetDependency */,
+			);
+			name = TyreServiceUITests;
+			productName = TyreServiceUITests;
+			productReference = ED3F1CBD2706189B00385D28 /* TyreServiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED3F1C952706189900385D28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					ED3F1C9C2706189900385D28 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ED3F1CB22706189B00385D28 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ED3F1C9C2706189900385D28;
+					};
+					ED3F1CBC2706189B00385D28 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ED3F1C9C2706189900385D28;
+					};
+				};
+			};
+			buildConfigurationList = ED3F1C982706189900385D28 /* Build configuration list for PBXProject "TyreService" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED3F1C942706189900385D28;
+			productRefGroup = ED3F1C9E2706189900385D28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED3F1C9C2706189900385D28 /* TyreService */,
+				ED3F1CB22706189B00385D28 /* TyreServiceTests */,
+				ED3F1CBC2706189B00385D28 /* TyreServiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED3F1C9B2706189900385D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3F1CAD2706189B00385D28 /* LaunchScreen.storyboard in Resources */,
+				ED4451B6270D01B200B24F2D /* Registration.storyboard in Resources */,
+				ED08A808271A1752005C2A57 /* PartnerCabinet.storyboard in Resources */,
+				ED32DC3927161CCC00690C8C /* AboutServiceCollectionViewCell.xib in Resources */,
+				ED4C88632721C6AD00EB6323 /* RequestWorks.storyboard in Resources */,
+				ED3F1CAA2706189B00385D28 /* Assets.xcassets in Resources */,
+				ED32DC3D27161CDD00690C8C /* ContactsCollectionViewCell.xib in Resources */,
+				EDE5D6312725AA3700436FD7 /* Orders.storyboard in Resources */,
+				EDE667FA270B5FFA002DD027 /* CarTypeCollectionViewCell.xib in Resources */,
+				EDE5D6272725943900436FD7 /* CreateReview.storyboard in Resources */,
+				EDE5D61F2724946300436FD7 /* ReviewTableViewCell.xib in Resources */,
+				EDE5D63F2725C11800436FD7 /* OrderTableViewCell.xib in Resources */,
+				FE8D590227195685000AB01F /* ReviewsCollectionViewCell.xib in Resources */,
+				ED76AD252721FFB900A2D9F6 /* RequestWorksTableViewCell.xib in Resources */,
+				ED984904271339DD00C924A1 /* Authorization.storyboard in Resources */,
+				ED952F66271DEBA50017B956 /* SideMenu.storyboard in Resources */,
+				ED32DC2A27160D7700690C8C /* ServiceInfo.storyboard in Resources */,
+				ED3F1CA82706189900385D28 /* ServiceList.storyboard in Resources */,
+				ED32DC31271613C600690C8C /* MenuServiceInfoCollectionViewCell.xib in Resources */,
+				EDE66814270B73F4002DD027 /* ServiceViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F1CB12706189B00385D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F1CBB2706189B00385D28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		126D8717BCFFC4C2FB73E75A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TyreService-TyreServiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78A95FABC2936E5B9D7748B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TyreServiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D511F2C3062666FEB588F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TyreService/Pods-TyreService-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TyreService/Pods-TyreService-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TyreService/Pods-TyreService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB64B38CF34420543D4BAD17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TyreService-TyreServiceUITests/Pods-TyreService-TyreServiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TyreService-TyreServiceUITests/Pods-TyreService-TyreServiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TyreService-TyreServiceUITests/Pods-TyreService-TyreServiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E68C68BDA76A0FA219CDDBD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TyreService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED3F1C992706189900385D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED98490827133AC800C924A1 /* AuthorizationViewController.swift in Sources */,
+				ED489A7B2721A35F005CF284 /* Constants.swift in Sources */,
+				EDE667F9270B5FFA002DD027 /* CarTypeCollectionViewCell.swift in Sources */,
+				ED4C88672721C6F000EB6323 /* RequestWorksViewModel.swift in Sources */,
+				EDE5D61E2724946300436FD7 /* ReviewTableViewCell.swift in Sources */,
+				ED08A7E7271A13A3005C2A57 /* Localization.swift in Sources */,
+				EDE66804270B6769002DD027 /* RequestStatus.swift in Sources */,
+				ED08A80D271A1752005C2A57 /* PartnerCabinetViewController.swift in Sources */,
+				ED4451B4270D01B200B24F2D /* SignUpViewModel.swift in Sources */,
+				EDE66813270B73F4002DD027 /* ServiceViewCell.swift in Sources */,
+				ED32DC30271613C600690C8C /* MenuServiceInfoCollectionViewCell.swift in Sources */,
+				EDE5D6422725C2FD00436FD7 /* OrderCellViewModel.swift in Sources */,
+				ED11C189272064BA00C41DF1 /* Partner.swift in Sources */,
+				EDE5D6352725AA6300436FD7 /* OrdersTableViewController.swift in Sources */,
+				FE8D590127195685000AB01F /* ReviewsCollectionViewCell.swift in Sources */,
+				ED32DC2C27160DFE00690C8C /* ServiceInfoViewController.swift in Sources */,
+				EDE667F1270B5E69002DD027 /* NetworkManager.swift in Sources */,
+				EDE5D63E2725C11800436FD7 /* OrderTableViewCell.swift in Sources */,
+				ED32DC342716148400690C8C /* MenuCellServiceInfoViewModel.swift in Sources */,
+				EDE667FE270B6178002DD027 /* ServiceModel.swift in Sources */,
+				ED32DC3C27161CDD00690C8C /* ContactsCollectionViewCell.swift in Sources */,
+				EDE6680A270B69F8002DD027 /* FilterCellViewModel.swift in Sources */,
+				ED32DC4B2717472100690C8C /* ReviewsCellViewModel.swift in Sources */,
+				ED32DC492717470800690C8C /* ContactsCellViewModel.swift in Sources */,
+				ED98490A27133B7D00C924A1 /* AuthorizationViewModel.swift in Sources */,
+				EDE66808270B69AB002DD027 /* ServiceCellViewModel.swift in Sources */,
+				ED32DC3827161CCC00690C8C /* AboutServiceCollectionViewCell.swift in Sources */,
+				ED4C88652721C6DA00EB6323 /* RequestWorksViewController.swift in Sources */,
+				ED2EC260271F3C9C00B67EBD /* MenuTableViewController.swift in Sources */,
+				ED76AD272722005B00A2D9F6 /* RequestWorkCellViewModel.swift in Sources */,
+				ED08A805271A1752005C2A57 /* PartnerCabinetViewModel.swift in Sources */,
+				ED76AD242721FFB900A2D9F6 /* RequestWorksTableViewCell.swift in Sources */,
+				ED3F1CA52706189900385D28 /* ServicesListViewController.swift in Sources */,
+				EDE66806270B68AC002DD027 /* ServiceListViewModel.swift in Sources */,
+				EDE66801270B6530002DD027 /* ExtensionString.swift in Sources */,
+				ED08A80B271A1752005C2A57 /* PartnerServiceTableViewCell.swift in Sources */,
+				ED32DC47271746F100690C8C /* AboutCellViewModel.swift in Sources */,
+				ED32DC2827160D2600690C8C /* ServiceInfoViewModel.swift in Sources */,
+				EDE5D6222724968700436FD7 /* ReviewTableCellViewModel.swift in Sources */,
+				ED830B872726BDA700889AF2 /* PersonalArea.swift in Sources */,
+				ED4451B7270D01B200B24F2D /* RegistrationViewController.swift in Sources */,
+				EDED3C5F2724A0C400079B87 /* PartnerServicesViewModel.swift in Sources */,
+				ED08A811271CB14C005C2A57 /* PartnerServicesTableViewController.swift in Sources */,
+				EDE5D6292725949700436FD7 /* CreateReviewViewController.swift in Sources */,
+				ED3F1CA12706189900385D28 /* AppDelegate.swift in Sources */,
+				ED3F1CA32706189900385D28 /* SceneDelegate.swift in Sources */,
+				EDED3C5D27244FA700079B87 /* ResponseStatus.swift in Sources */,
+				EDE5D6372725B20000436FD7 /* OrdersViewModel.swift in Sources */,
+				ED11C18B27206B7F00C41DF1 /* AuthManager.swift in Sources */,
+				ED08A803271A1752005C2A57 /* PartnerServiceCellViewModel.swift in Sources */,
+				EDE5D62B272594F400436FD7 /* CreateReviewViewModel.swift in Sources */,
+				ED08A803271A1752005C2A57 /* PartnerServiceCellViewModel.swift in Sources */,
+				ED4451AB270D017800B24F2D /* ExtensionUIViewController.swift in Sources */,
+				EDE5D63A2725B39C00436FD7 /* Order.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F1CAF2706189B00385D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3F1CB82706189B00385D28 /* TyreServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3F1CB92706189B00385D28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3F1CC42706189B00385D28 /* TyreServiceUITestsLaunchTests.swift in Sources */,
+				ED3F1CC22706189B00385D28 /* TyreServiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED3F1CB52706189B00385D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3F1C9C2706189900385D28 /* TyreService */;
+			targetProxy = ED3F1CB42706189B00385D28 /* PBXContainerItemProxy */;
+		};
+		ED3F1CBF2706189B00385D28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3F1C9C2706189900385D28 /* TyreService */;
+			targetProxy = ED3F1CBE2706189B00385D28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED3F1CA62706189900385D28 /* ServiceList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3F1CA72706189900385D28 /* Base */,
+			);
+			name = ServiceList.storyboard;
+			sourceTree = "<group>";
+		};
+		ED3F1CAB2706189B00385D28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3F1CAC2706189B00385D28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED3F1CC52706189B00385D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED3F1CC62706189B00385D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED3F1CC82706189B00385D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CF3E373EFE0BEEB84C2313 /* Pods-TyreService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWSL4NKN83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TyreService/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = ServiceList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.TyreService2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ED3F1CC92706189B00385D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7199361751E08E45413F3F86 /* Pods-TyreService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWSL4NKN83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TyreService/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = ServiceList;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.TyreService2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ED3F1CCB2706189B00385D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82D60A74E179582077F5380 /* Pods-TyreServiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWSL4NKN83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.TyreServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TyreService.app/TyreService";
+			};
+			name = Debug;
+		};
+		ED3F1CCC2706189B00385D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACEC35B84AD1D7651A430D1 /* Pods-TyreServiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWSL4NKN83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.TyreServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TyreService.app/TyreService";
+			};
+			name = Release;
+		};
+		ED3F1CCE2706189B00385D28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04100B3999D80CEC3DAB730 /* Pods-TyreService-TyreServiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWSL4NKN83;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.TyreServiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TyreService;
+			};
+			name = Debug;
+		};
+		ED3F1CCF2706189B00385D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9088E6634B1C87D8EDA50C51 /* Pods-TyreService-TyreServiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWSL4NKN83;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.TyreServiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TyreService;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED3F1C982706189900385D28 /* Build configuration list for PBXProject "TyreService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3F1CC52706189B00385D28 /* Debug */,
+				ED3F1CC62706189B00385D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3F1CC72706189B00385D28 /* Build configuration list for PBXNativeTarget "TyreService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3F1CC82706189B00385D28 /* Debug */,
+				ED3F1CC92706189B00385D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3F1CCA2706189B00385D28 /* Build configuration list for PBXNativeTarget "TyreServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3F1CCB2706189B00385D28 /* Debug */,
+				ED3F1CCC2706189B00385D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3F1CCD2706189B00385D28 /* Build configuration list for PBXNativeTarget "TyreServiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3F1CCE2706189B00385D28 /* Debug */,
+				ED3F1CCF2706189B00385D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED3F1C952706189900385D28 /* Project object */;
+}

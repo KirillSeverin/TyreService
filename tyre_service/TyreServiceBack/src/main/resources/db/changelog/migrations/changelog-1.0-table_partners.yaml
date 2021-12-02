@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-partners
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: partners
+            columns:
+              - column: {name: id, type: bigint, autoIncrement: true, constraints: {primaryKey: true}}
+              - column: {name: name, type: varchar(50), constraints: {nullable: false}}
+              - column: {name: description, type: varchar}
+              - column: {name: address, type: varchar}
+              - column: {name: email, type: varchar(50), constraints: {nullable: false}}
+              - column: {name: phone, type: varchar(15), constraints: {nullable: false}}
+              - column: {name: schedule, type: varchar}
+              - column: {name: rank, type: double}
+              - column: {name: latitude, type: double}
+              - column: {name: longitude, type: double}
+              - column: {name: type, type: varchar(25), constraints: {nullable: false}}
+              - column: {name: image, type: varchar}
+
+  - changeSet:
+      id: 02-add-comments-partners
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table partners is 'Таблица хранения учетных записей партнеров';

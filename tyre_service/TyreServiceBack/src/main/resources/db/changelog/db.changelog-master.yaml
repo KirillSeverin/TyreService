@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - property:
+      dbms:  h2, postgresql, mysql
+      name:  author
+      value:  Oleg Petrov
+
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-1.0-table_partners.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-2.0-table_clients.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-3.0-table_users.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-4.0-table_works.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-5.0-table_costsWorks.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-6.0-table_orders.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-7.0-table_linesOrder.yaml }
+  - include: { relativeToChangelogFile: true, file: migrations/changelog-8.0-table_reviews.yaml }

@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-table-clients
+      author: ${author}
+      changes:
+        - createTable:
+            tableName: clients
+            columns:
+              - column: {name: id, type: bigint, autoIncrement: true, constraints: {primaryKey: true}}
+              - column: {name: name, type: varchar(50), constraints: {nullable: false}}
+              - column: {name: email, type: varchar(50), constraints: {nullable: false}}
+              - column: {name: phone, type: varchar(15), constraints: {nullable: false}}
+
+  - changeSet:
+      id: 02-add-comments-clients
+      author: ${author}
+      changes:
+        - sql:
+            dbms: h2, postgresql, mysql
+            stripComments: true
+            sql: comment on table clients is 'Таблица хранения учетных записей клиентов';

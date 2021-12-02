@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BaA-zY-kpu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5gX-Nc-yMw">
+            <objects>
+                <navigationController storyboardIdentifier="ServicesListNavVC" navigationBarHidden="YES" id="BaA-zY-kpu" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j88-PT-hR4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lzQ-KG-QmS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rpc-sp-Vm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-803" y="138"/>
+        </scene>
+        <!--Services List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ServicesListVC" id="BYZ-38-t0r" customClass="ServicesListViewController" customModule="TyreService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dYQ-Qi-qL6">
+                                <rect key="frame" x="10" y="54" width="394" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZd-1o-0cj">
+                                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="U2z-wE-Q2D"/>
+                                        </constraints>
+                                        <color key="tintColor" name="buttonColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" systemColor="systemBackgroundColor"/>
+                                            <imageReference key="image" image="line.horizontal.3" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLeftMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B6f-bD-rja"/>
+                                        </connections>
+                                    </button>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-1a-SlY">
+                                        <rect key="frame" x="73" y="8" width="248" height="50"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSW-ky-ECc">
+                                        <rect key="frame" x="336" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="kIT-8v-dQd"/>
+                                            <constraint firstAttribute="height" constant="50" id="zpm-FS-xe6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="tintColor" name="buttonColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="filter">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showFilterMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qhh-Ib-uu6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="2pT-Rf-5NY"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UEz-uQ-6QB">
+                                <rect key="frame" x="10" y="130" width="394" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sMX-Pt-yCW"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="F2Z-92-X4e">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="J5K-zT-UeQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xFK-2i-OEY"/>
+                                </connections>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ypa-nw-YQZ">
+                                <rect key="frame" x="0.0" y="180" width="414" height="682"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hKE-Pg-Dg7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uhu-W0-rDB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dYQ-Qi-qL6" secondAttribute="trailing" constant="10" id="8SI-vH-skP"/>
+                            <constraint firstItem="dYQ-Qi-qL6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="AtB-Mf-hgw"/>
+                            <constraint firstItem="ypa-nw-YQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G9H-kU-Es9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ypa-nw-YQZ" secondAttribute="bottom" id="JLQ-kP-aPa"/>
+                            <constraint firstAttribute="trailing" secondItem="UEz-uQ-6QB" secondAttribute="trailing" constant="10" id="L2F-ab-zJw"/>
+                            <constraint firstItem="ypa-nw-YQZ" firstAttribute="top" secondItem="UEz-uQ-6QB" secondAttribute="bottom" constant="10" id="Mer-JN-9sd"/>
+                            <constraint firstItem="UEz-uQ-6QB" firstAttribute="top" secondItem="dYQ-Qi-qL6" secondAttribute="bottom" constant="10" id="Wm4-HZ-upV"/>
+                            <constraint firstItem="UEz-uQ-6QB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gkD-6X-rLk"/>
+                            <constraint firstItem="dYQ-Qi-qL6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="u1I-Xt-wZJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypa-nw-YQZ" secondAttribute="trailing" id="xIb-kI-AqG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qjo-xG-QP8"/>
+                    <connections>
+                        <outlet property="filterCollectionView" destination="UEz-uQ-6QB" id="2os-fd-ITX"/>
+                        <outlet property="partnersTableView" destination="ypa-nw-YQZ" id="cyq-Co-dRd"/>
+                        <outlet property="searchBar" destination="PFZ-1a-SlY" id="69Y-e6-Ah6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="filter" width="32" height="32"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <namedColor name="buttonColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
